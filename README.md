@@ -81,23 +81,21 @@ Request Body:
 
 Response:
 
-json
-Copy code
-{
+`{
 "transaction_id": 1,
 "amount": 100.00,
 "transaction_type": "DEPOSIT",
 "status": "PENDING",
 "user": 1,
 "timestamp": "2024-11-16T10:30:00Z"
-} 2. Retrieve Transactions by User
-GET /api/transactions/?user_id=<user_id>
+}`
+
+2.  Retrieve Transactions by User
+    GET `/api/transactions/?user_id=<user_id>`
 
 Response:
 
-json
-Copy code
-{
+`{
 "transactions": [
 {
 "transaction_id": 1,
@@ -114,37 +112,35 @@ Copy code
 "timestamp": "2024-11-15T15:00:00Z"
 }
 ]
-} 3. Update Transaction Status
-PUT /api/transactions/<transaction_id>/
+}`
+
+3. Update Transaction Status
+   PUT `/api/transactions/<transaction_id>/`
 
 Request Body:
 
-json
-Copy code
-{
+`{
 "status": "COMPLETED"
-}
+}`
 Response:
 
-json
-Copy code
-{
+`{
 "transaction_id": 1,
 "amount": 100.00,
 "transaction_type": "DEPOSIT",
 "status": "COMPLETED",
 "timestamp": "2024-11-16T10:30:00Z"
-} 4. Retrieve Transaction Details
-GET /api/transactions/<transaction_id>/
+}`
+
+4. Retrieve Transaction Details
+   GET `/api/transactions/<transaction_id>/`
 
 Response:
 
-json
-Copy code
-{
+`{
 "transaction_id": 1,
 "amount": 100.00,
 "transaction_type": "DEPOSIT",
 "status": "COMPLETED",
 "timestamp": "2024-11-16T10:30:00Z"
-}
+}`
