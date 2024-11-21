@@ -144,3 +144,19 @@ Response:
 "status": "COMPLETED",
 "timestamp": "2024-11-16T10:30:00Z"
 }`
+
+## Testing
+
+Run the test suite using Django's test runner:
+
+`python manage.py test`
+
+- _Future Enhancements_
+- _Implement authentication and authorization using JWT._
+- _Add pagination to the transaction history endpoint._
+- _Support filtering transactions by timestamp and status._
+- _Add a dashboard to visualize transaction trends._
+
+## License
+
+This project is licensed under the MIT License.
